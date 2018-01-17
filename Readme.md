@@ -8,7 +8,7 @@ SHIORI-Basic の実装です。
 
 ```bash
 nimble install
-nim c --app:lib -d:release --cpu:i386 shiolink.nim
+nim c --app:lib -d:release --cc:vcc --cpu:i386 shiolink.nim
 ```
 
 ## shiolink.exe (テスト用)

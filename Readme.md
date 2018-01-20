@@ -18,7 +18,7 @@ command: # 実行コマンド 引数を配列にしたもの
 - node.exe
 - shiori.js
 - ./dict
-timeout: 5 # タイムアウト秒
+timeout: 5 # タイムアウト秒 (未実装)
 ```
 
 ### command 実行コマンド
@@ -27,7 +27,7 @@ shiori_proxy.dllは、SHIORI load()時にコマンドを実行してSHIORIプロ
 
 load()時に立ち上げるコマンド引数を配列で記述します。
 
-### timeout タイムアウト秒
+### timeout タイムアウト秒 (未実装)
 
 SHIORIプロセスにリクエストを投げてもこの秒数以内にレスポンスが帰ってこなかった場合、shiori_proxy.dllはSHIORIプロセスがハングしたとみなし、異常終了します。
 

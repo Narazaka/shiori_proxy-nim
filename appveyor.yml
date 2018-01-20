@@ -8,7 +8,7 @@ install:
   - set PATH=nim\nim-0.17.2\bin;%PATH%
   - nim --version
   - nimble --version
-  - nimble install
+  - nimble install -y
 
 build_script:
   - nimble dll32

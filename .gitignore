@@ -1,3 +1,8 @@
+doc
 nimcache
-shiolink
-shiolink.exe
+*.exe
+*.dll
+*.lib
+*.exp
+*.ilk
+*.pdb

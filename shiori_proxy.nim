@@ -19,7 +19,7 @@ proc loadConfig(): void =
     configFile.close()
 
 proc openShioriProcess(): void =
-    shioriProcess = startProcess(config.command[0], ".", config.command[1..^1])
+    shioriProcess = startProcess(config.command[0], ".", config.command[1..^1], options = {poDemon})
     shioriStdin = shioriProcess.inputStream
     shioriStdout = shioriProcess.outputStream
 

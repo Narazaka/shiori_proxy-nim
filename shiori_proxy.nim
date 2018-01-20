@@ -51,7 +51,7 @@ shioriUnloadCallback = proc (): bool =
     shioriStdin.writeLine("UNLOAD SHIORIPROXY/1.0")
     shioriStdin.flush()
     let value = shioriStdout.readLine()
-    shioriProcess.close()
+    shioriProcess.terminate()
     value == "1"
 
 when appType != "lib":

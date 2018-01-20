@@ -8,7 +8,6 @@ import strutils
 
 type ShioriProxyConfig = object
     command: seq[string]
-    timeout: int32
 
 var config: ShioriProxyConfig
 var shioriProcess: Process

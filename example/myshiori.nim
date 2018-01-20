@@ -30,6 +30,9 @@ proc request(): void =
 
     case request.id:
         of "version": response.value = "1.0.0"
+        of "name": response.value = "myshiori"
+        of "craftman": response.value = "me"
+        of "craftmanw": response.value = "私"
         of "OnBoot": response.value = r"\h\s[0]hello\e"
         else: response.status = No_Content
 

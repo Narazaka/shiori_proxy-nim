@@ -78,14 +78,15 @@ shiori_proxy.dllはSHIORIプロセスに標準入力でSHIORIリクエストな�
 
 ```bash
 nimble install
-nim c --app:lib -d:release --cc:vcc --cpu:i386 shiori_proxy.nim
+nimble dll32
 ```
 
-### shiori_proxy.exe (テスト用)
+### shiori_proxy.exe + myshiori.exe (テスト用)
 
 ```bash
 nimble install
-nim c -r shiori_proxy.nim
+nimble install shiori
+nimble example
 ```
 
 ## License

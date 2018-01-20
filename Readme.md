@@ -68,7 +68,7 @@ shiori_proxy.dllはSHIORIプロセスに標準入力でSHIORIリクエストな�
 一覧すると、リクエスト、レスポンスともに以下のような状態になります。
 
 | ベースウェア(SSP等) <-> shiori_proxy.dll | shiori_proxy.dll <-> SHIORIコマンド |
-|---|---|---|
+|---|---|
 | Charset: Shift_JIS (実際=Shift_JIS) | Charset: Shift_JIS (実際=UTF-8) |
 | Charset: UTF-8 (実際=UTF-8) | Charset: UTF-8 (実際=UTF-8) |
 

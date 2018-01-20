@@ -1,4 +1,3 @@
-import shiori
 import shioridll
 import shiori_charset_convert
 import yaml.serialization

@@ -15,7 +15,14 @@ build_script:
 
 test: off
 
-deploy: off
+deploy:
+  provider: GitHub
+  description: shiori_proxy.dll
+  auth_token:
+    secure: z9g/7i2QxslP2J6SnSKp4Pu6xE+VOKar/jlltvLJkLwhqBEKVkA5LeizT2jMIgoi
+  on:
+    branch: master
+    appveyor_repo_tag: true
 
 artifacts:
   - path: shiori_proxy.dll

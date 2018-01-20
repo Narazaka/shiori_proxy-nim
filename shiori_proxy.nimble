@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.0"
+version       = "1.0.0"
 author        = "Narazaka"
 description   = "SHIORI Basic implementation"
 license       = "MIT"
@@ -9,4 +9,5 @@ license       = "MIT"
 
 requires "nim >= 0.17.2"
 requires "shioridll"
-requires "nuuid"
+requires "shiori_charset_convert"
+requires "yaml"

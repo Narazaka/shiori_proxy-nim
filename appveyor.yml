@@ -1,0 +1,28 @@
+version: "{build}"
+branches:
+  except:
+    - gh-pages
+install:
+  - ps: Invoke-WebRequest https://nim-lang.org/download/nim-0.17.2_x32.zip -OutFile nim-0.17.2_x32.zip
+  - ps: Expand-Archive nim-0.17.2_x32.zip -DestinationPath nim
+  - set PATH=nim\nim-0.17.2\bin;%PATH%
+  - nim --version
+  - nimble --version
+  - nimble install -y
+
+build_script:
+  - nimble dll32
+
+test: off
+
+deploy:
+  provider: GitHub
+  description: shiori_proxy.dll
+  auth_token:
+    secure: z9g/7i2QxslP2J6SnSKp4Pu6xE+VOKar/jlltvLJkLwhqBEKVkA5LeizT2jMIgoi
+  on:
+    branch: master
+    appveyor_repo_tag: true
+
+artifacts:
+  - path: shiori_proxy.dll

@@ -1,0 +1,21 @@
+version: "{build}"
+branches:
+  except:
+    - gh-pages
+install:
+  - ps: Invoke-WebRequest https://nim-lang.org/download/nim-0.17.2_x32.zip -OutFile nim-0.17.2_x32.zip
+  - ps: Expand-Archive nim-0.17.2_x32.zip -DestinationPath nim
+  - set PATH=nim\nim-0.17.2\bin;%PATH%
+  - nim --version
+  - nimble --version
+  - nimble install
+
+build_script:
+  - nimble dll32
+
+test: off
+
+deploy: off
+
+artifacts:
+  - path: shiori_proxy.dll

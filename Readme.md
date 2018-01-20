@@ -9,6 +9,14 @@ SHIORI-Basic の実装です。
 
 このshiori_proxy.dllは、コンソールアプリケーションとの標準入出力でSHIORIサブシステムを実現するためのラッパーです。
 
+## ダウンロード・利用
+
+[Releases](https://github.com/Narazaka/shiori_proxy-nim/releases) から最新のdllをダウンロードして下さい。
+
+それを`ghost/master/shiori_proxy.dll`に配置し、`descript.txt`に`shiori,shiori_proxy.dll`と記述して下さい。
+
+また下記で説明している`shiori_proxy.yml`を適切に記述し、SHIORIプロセスプログラムを呼び出すように設定して下さい。
+
 ## 設定
 
 `shiori_proxy.yml`で行います
